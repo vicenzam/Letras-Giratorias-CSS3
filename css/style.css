@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Architects+Daughter");
+.letra {
+  height: 100vh;
+  background: tomato;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.letra-gira {
+  text-decoration: none;
+  font-size: 7em;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.letra-gira span {
+  color: black;
+  display: inline-block;
+  position: relative;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  transition: color 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, color 0.5s;
+  transition: transform 0.5s, color 0.5s, -webkit-transform 0.5s;
+}
+
+.letra-gira:hover span {
+  color: white;
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+.letra-gira:hover span:first-child {
+  transition-delay: 0s;
+}
+
+.letra-gira:hover span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.letra-gira:hover span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.letra-gira:hover span:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.letra-gira:hover span:nth-child(5) {
+  transition-delay: 0.4s;
+}
